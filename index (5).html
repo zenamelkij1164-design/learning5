@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Калькулятор стоимости заказа</title>
+</head>
+<body>
+    <h1>Калькулятор стоимости заказа</h1>
+
+    <form id="order-form">
+        <p>
+            <label for="product">Товар:</label>
+            <select id="product" name="product">
+                <option value="150">Товар A — 150 руб.</option>
+                <option value="250">Товар B — 250 руб.</option>
+                <option value="400">Товар C — 400 руб.</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="quantity">Количество:</label>
+            <input type="text" id="quantity" name="quantity" autocomplete="off">
+        </p>
+
+        <p>
+            <button type="button" id="calculate">Рассчитать стоимость</button>
+        </p>
+
+        <p id="error" role="alert"></p>
+        <div id="result" aria-live="polite"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
